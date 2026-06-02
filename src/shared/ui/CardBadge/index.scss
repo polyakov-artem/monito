@@ -1,0 +1,37 @@
+@use '@/shared/styles/abstracts/abstracts' as *;
+
+.card-badge {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 8px 10px 6px;
+  border-radius: 8px;
+  background-color: var(--mon-yellow-40);
+  color: var(--dark-blue-80);
+  font: var(--font-gilroy-bold-14);
+
+  &__text {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
+    &:before {
+      content: '•';
+      display: flex;
+      width: 18px;
+      height: 18px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+
+    > svg,
+    > img {
+      @include contain-object;
+    }
+  }
+}

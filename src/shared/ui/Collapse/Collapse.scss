@@ -1,0 +1,9 @@
+.collapse {
+  overflow: hidden;
+  transition-property: height;
+  will-change: height;
+}
+
+.collapse__content {
+  width: 100%;
+}

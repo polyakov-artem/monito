@@ -1,0 +1,9 @@
+@use '@/shared/styles/abstracts/abstracts' as *;
+
+.range-filter {
+  &__title {
+    font: var(--font-gilroy-bold-16);
+    color: var(--neutral-100);
+    margin: 0 0 10px;
+  }
+}

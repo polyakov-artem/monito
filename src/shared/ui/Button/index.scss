@@ -1,0 +1,260 @@
+@use 'button-mixins' as *;
+@use '@/shared/styles/abstracts/abstracts' as *;
+
+.btn {
+  appearance: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  font: inherit;
+  line-height: inherit;
+  cursor: pointer;
+  background: none;
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+
+  &:disabled {
+    cursor: default;
+  }
+
+  &__inner {
+    width: 100%;
+    max-width: 100%;
+    gap: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__icon,
+  &__spinner,
+  &__count {
+    flex: none;
+    display: inline-flex;
+  }
+
+  &__icon,
+  &__spinner {
+    width: 1rem;
+    height: 1rem;
+
+    > * {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &_full-width {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  &_rounded_pill {
+    border-radius: 9999px;
+  }
+
+  &_rounded_full {
+    border-radius: 50%;
+  }
+}
+
+.btn {
+  transition: 0.2s;
+
+  &_rounded_m {
+    border-radius: 8px;
+  }
+
+  &_view_default,
+  &_view_outline {
+    &.btn_scale_l {
+      font: var(--font-gilroy-medium-16);
+      padding: 10px 27px;
+      gap: 8px;
+      border-width: 2px;
+      border-style: solid;
+
+      .btn__icon {
+        width: 24px;
+        height: 24px;
+      }
+
+      &.btn_icon-only {
+        padding: 10px;
+      }
+    }
+
+    &.btn_scale_m {
+      font: var(--font-gilroy-medium-14);
+      padding: 10px 27px;
+      gap: 8px;
+      border-width: 2px;
+      border-style: solid;
+
+      .btn__icon {
+        width: 20px;
+        height: 20px;
+      }
+
+      &.btn_icon-only {
+        padding: 10px;
+      }
+    }
+  }
+
+  &_view_default {
+    &.btn_theme_primary {
+      --btn-color: var(--neutral-00);
+      --btn-background: var(--dark-blue);
+      --btn-border-color: var(--btn-background);
+
+      color: var(--btn-color);
+      background-color: var(--btn-background);
+      border-color: var(--btn-border-color);
+
+      @include btn-focus {
+        --btn-background: var(--dark-blue-60);
+        --btn-border-color: var(--dark-blue-40);
+
+        outline: 3px solid color-mix(in srgb, var(--btn-background), transparent 80%);
+      }
+
+      @include btn-hover {
+        --btn-background: var(--dark-blue-40);
+      }
+
+      @include btn-active {
+        --btn-background: var(--dark-blue-80);
+      }
+
+      @include btn-disabled {
+        --btn-background: var(--neutral-20);
+        --btn-color: var(--neutral-60);
+      }
+    }
+
+    &.btn_theme_secondary {
+      --btn-color: var(--neutral-100);
+      --btn-background: var(--neutral-00);
+      --btn-border-color: var(--btn-background);
+
+      color: var(--btn-color);
+      background-color: var(--btn-background);
+      border-color: var(--btn-border-color);
+
+      @include btn-focus {
+        outline: 3px solid color-mix(in srgb, var(--neutral-00), transparent 50%);
+      }
+
+      @include btn-hover {
+        --btn-background: var(--neutral-20);
+      }
+
+      @include btn-active {
+        --btn-background: var(--neutral-00);
+      }
+
+      @include btn-disabled {
+        --btn-background: var(--neutral-20);
+        --btn-color: var(--neutral-60);
+      }
+    }
+  }
+
+  &_view_outline {
+    &.btn_theme_primary {
+      --btn-color: var(--dark-blue);
+      --btn-background: transparent;
+      --btn-border-color: var(--btn-color);
+
+      color: var(--btn-color);
+      background-color: var(--btn-background);
+      border-color: var(--btn-border-color);
+
+      @include btn-focus {
+        --btn-color: var(--dark-blue-60);
+
+        outline: 3px solid color-mix(in srgb, var(--btn-color), transparent 80%);
+      }
+
+      @include btn-hover {
+        --btn-color: var(--dark-blue-40);
+      }
+
+      @include btn-active {
+        --btn-color: var(--dark-blue-80);
+      }
+
+      @include btn-disabled {
+        --btn-color: var(--neutral-60);
+      }
+    }
+
+    &.btn_theme_secondary {
+      --btn-color: var(--neutral-00);
+      --btn-background: transparent;
+      --btn-border-color: var(--btn-color);
+
+      color: var(--btn-color);
+      background-color: var(--btn-background);
+      border-color: var(--btn-border-color);
+
+      @include btn-focus {
+        outline: 3px solid color-mix(in srgb, var(--neutral-00), transparent 50%);
+      }
+
+      @include btn-hover {
+        --btn-color: var(--neutral-20);
+      }
+
+      @include btn-active {
+        --btn-color: var(--neutral-00);
+      }
+
+      @include btn-disabled {
+        --btn-color: var(--neutral-60);
+      }
+    }
+  }
+
+  &_view_ghost {
+    &.btn_scale_m {
+      padding: 10px;
+
+      &.btn_icon-only {
+        .btn__icon {
+          width: 23px;
+          height: 23px;
+        }
+      }
+    }
+  }
+
+  &_view_filter {
+    &.btn_theme_primary {
+      color: var(--dark-blue);
+
+      &.btn_selected {
+        background-color: var(--dark-blue);
+        color: var(--neutral-00);
+      }
+    }
+
+    &.btn_scale_m {
+      padding: 7px 10px;
+      border-radius: 8px;
+      font: var(--font-gilroy-bold-16);
+      gap: 8px;
+
+      .btn__icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

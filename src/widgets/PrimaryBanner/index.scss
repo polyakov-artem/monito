@@ -1,0 +1,82 @@
+@use '@/shared/styles/abstracts/abstracts' as *;
+
+.primary-banner {
+  &__box {
+    background:
+      url(img/img.png) no-repeat 11% bottom/32%,
+      url(img/bg-1.png) no-repeat right/cover;
+
+    border-radius: 20px;
+    display: flex;
+    justify-content: end;
+  }
+
+  &__main {
+    flex-grow: 1;
+    text-align: right;
+    padding: 64px 0 56px;
+    max-width: 410px;
+    margin-right: calc(85px / 1180px * 100%);
+  }
+
+  &__title {
+    margin: 0;
+    font: 700 52px/60px var(--ff-gilroy);
+    color: var(--dark-blue-80);
+    text-transform: capitalize;
+
+    > span {
+      font: var(--font-gilroy-bold-36);
+    }
+  }
+
+  &__text {
+    padding-left: 20px;
+    font: var(--font-gilroy-medium-12);
+    margin-bottom: 20px;
+    color: var(--neutral-80);
+  }
+
+  &__buttons {
+    display: grid;
+    justify-content: end;
+    grid-template-columns: max-content minmax(max-content, 163px);
+    gap: 21px;
+  }
+
+  @media (max-width: $point-md) {
+    &__box {
+      background:
+        url(img/img.png) no-repeat center bottom/min(100%, 400px),
+        url(img/bg-2.png) no-repeat center/cover;
+
+      justify-content: center;
+    }
+
+    &__main {
+      text-align: center;
+      padding: 32px var(--container-py) 372px;
+      margin-right: initial;
+    }
+
+    &__title {
+      margin: 0 0 12px;
+      font: var(--font-gilroy-bold-36);
+      line-height: 1.2;
+
+      > span {
+        font: var(--font-gilroy-bold-24);
+      }
+    }
+
+    &__text {
+      padding-left: initial;
+      margin-bottom: 35px;
+    }
+
+    &__buttons {
+      justify-content: center;
+      gap: 17px;
+    }
+  }
+}

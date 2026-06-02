@@ -1,0 +1,5 @@
+@use '@/shared/ui/Input/input-mixins' as *;
+
+.search-window {
+  --modal-window-background: transparent;
+}

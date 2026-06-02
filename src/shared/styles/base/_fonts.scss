@@ -1,0 +1,40 @@
+@use 'sass:list';
+@use 'sass:string';
+
+@mixin font-face(
+  $family,
+  $path,
+  $weight: normal,
+  $style: normal,
+  $display: swap,
+  $exts: woff2 woff
+) {
+  $src: ();
+
+  @each $ext in $exts {
+    $format: $ext;
+
+    @if $ext == otf {
+      $format: 'opentype';
+    }
+
+    @if $ext == ttf {
+      $format: 'truetype';
+    }
+
+    $src: list.append($src, url('#{$path}.#{$ext}') format('#{$format}'), $separator: comma);
+  }
+
+  @font-face {
+    font-family: string.quote($family);
+    src: $src;
+    font-weight: $weight;
+    font-style: $style;
+    font-display: $display;
+  }
+}
+
+@include font-face('Gilroy', '@/shared/assets/fonts/Gilroy/Gilroy-Regular', 400);
+@include font-face('Gilroy', '@/shared/assets/fonts/Gilroy/Gilroy-Medium', 500);
+@include font-face('Gilroy', '@/shared/assets/fonts/Gilroy/Gilroy-SemiBold', 600);
+@include font-face('Gilroy', '@/shared/assets/fonts/Gilroy/Gilroy-Bold', 700);

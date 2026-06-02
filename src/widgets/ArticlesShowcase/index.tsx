@@ -1,0 +1,34 @@
+import type { FC } from 'react';
+import clsx from 'clsx';
+import { routerPaths } from '@/shared/config/routes';
+import { ShowcaseLayout } from '../../shared/ui/ShowcaseLayout';
+import articles from '@/data/articles.json';
+import { Link } from 'react-router-dom';
+import { ArticleCard } from '@/shared/ui/ArticleCard';
+import './index.scss';
+
+type ArticlesShowcaseProps = {
+  className?: string;
+};
+
+export const ArticlesShowcase: FC<ArticlesShowcaseProps> = ({ className }) => {
+  const classes = clsx('articles-showcase', className);
+
+  return (
+    <ShowcaseLayout
+      className={classes}
+      subtitle="You already know ?"
+      title="Useful pet knowledge"
+      link={routerPaths.category}
+      linkText="View more"
+    >
+      <div className="articles-showcase__grid">
+        {articles.map((article, index) => (
+          <Link to={routerPaths.details} key={index} className="articles-showcase__card">
+            <ArticleCard {...article} />
+          </Link>
+        ))}
+      </div>
+    </ShowcaseLayout>
+  );
+};

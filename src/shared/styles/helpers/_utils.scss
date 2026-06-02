@@ -1,0 +1,18 @@
+.page {
+  margin: 0 auto;
+  max-width: var(--page-max-width);
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.page-main {
+  flex-grow: 1;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--container-max-width);
+  padding: 0 var(--container-py);
+  width: 100%;
+}

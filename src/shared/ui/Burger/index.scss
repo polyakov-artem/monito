@@ -1,0 +1,57 @@
+.burger {
+  --burger-size: 48px;
+  --burger-line-width: 24px;
+  --burger-line-height: 2px;
+  --burger-line-gap: 6px;
+
+  --burger-offset: calc(var(--burger-line-gap) + var(--burger-line-height));
+
+  --burger-color: black;
+  --burger-radius: 8px;
+  --burger-transition: 0.25s;
+
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--burger-line-gap);
+
+  width: var(--burger-size);
+  height: var(--burger-size);
+
+  padding: 0;
+  border: none;
+  background: transparent;
+  border-radius: var(--burger-radius);
+  cursor: pointer;
+
+  transition: var(--burger-transition);
+
+  &__line {
+    width: var(--burger-line-width);
+    height: var(--burger-line-height);
+    background: var(--burger-color);
+    border-radius: 999px;
+
+    transition:
+      transform var(--burger-transition),
+      opacity var(--burger-transition);
+  }
+
+  &_open {
+    .burger__line {
+      &:nth-child(1) {
+        transform: translateY(var(--burger-offset)) rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: translateY(calc(var(--burger-offset) * -1)) rotate(-45deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@use '@/shared/styles/abstracts/abstracts' as *;
+
+.showcase-layout {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 20px;
+  }
+
+  &__content {
+    flex: none;
+    width: 100%;
+  }
+
+  &__btn {
+    align-self: end;
+    flex: none;
+  }
+
+  &__title-block {
+    flex-grow: 1;
+    &_inline {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+  }
+
+  &__subtitle {
+    font: var(--font-gilroy-medium-16);
+    color: black;
+    margin: 0;
+  }
+
+  &__title {
+    font: var(--font-gilroy-bold-24);
+    color: var(--dark-blue);
+    margin: 0;
+    text-transform: capitalize;
+  }
+
+  @media (max-width: $point-md) {
+    &__title {
+      font: var(--font-gilroy-bold-20);
+    }
+
+    &__subtitle {
+      font: var(--font-gilroy-medium-14);
+    }
+
+    &__btn {
+      order: 1;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+}

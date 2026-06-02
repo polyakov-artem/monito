@@ -1,0 +1,43 @@
+.modal-window {
+  --modal-window-background: white;
+  --modal-window-max-width: 600px;
+  --modal-window-border-radius: 0;
+  --modal-window-close-btn-background: rgba(0, 0, 0, 0.5);
+  --modal-window-close-btn-color: white;
+
+  position: relative;
+  transform: scale(0.95);
+  opacity: 0;
+  width: 100%;
+  max-width: var(--modal-window-max-width);
+  margin: 0 auto;
+
+  transition:
+    transform var(--modal-transition-duration) ease,
+    opacity var(--modal-transition-duration) ease;
+
+  &__wrapper {
+    overflow: hidden;
+    border-radius: var(--modal-window-border-radius);
+  }
+
+  &__content {
+    background-color: var(--modal-window-background);
+    max-height: calc(100dvh - 2 * var(--modal-window-margin));
+    overflow: auto;
+  }
+
+  &__close-btn {
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    color: var(--modal-window-close-btn-color);
+    background: var(--modal-window-close-btn-background);
+  }
+
+  &_open {
+    pointer-events: auto;
+    transform: scale(1);
+    opacity: 1;
+  }
+}

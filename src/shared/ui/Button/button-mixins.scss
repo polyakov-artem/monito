@@ -1,0 +1,62 @@
+// States must be declared strictly in this order:
+//
+// @include btn-focus
+// @include btn-hover
+// @include btn-active
+// @include btn-selected-focus
+// @include btn-selected-hover
+// @include btn-selected-active
+// @include btn-disabled
+// @include btn-loading
+
+@mixin btn-focus {
+  &:not(.btn_disabled):not(.btn_loading):not(.btn_selected):focus-visible {
+    @content;
+  }
+}
+
+@mixin btn-hover {
+  @media (hover: hover) {
+    &:not(.btn_disabled):not(.btn_loading):not(.btn_selected):hover {
+      @content;
+    }
+  }
+}
+
+@mixin btn-active {
+  &:not(.btn_disabled):not(.btn_loading):not(.btn_selected):active {
+    @content;
+  }
+}
+
+@mixin btn-selected-focus {
+  &.btn_selected:not(.btn_disabled):not(.btn_loading):focus-visible {
+    @content;
+  }
+}
+
+@mixin btn-selected-hover {
+  @media (hover: hover) {
+    &.btn_selected:not(.btn_disabled):not(.btn_loading):hover {
+      @content;
+    }
+  }
+}
+
+@mixin btn-selected-active {
+  &.btn_selected:not(.btn_disabled):not(.btn_loading):active {
+    @content;
+  }
+}
+
+@mixin btn-disabled {
+  &.btn_disabled {
+    @content;
+  }
+}
+
+@mixin btn-loading {
+  &.btn_loading {
+    @content;
+  }
+}

@@ -1,0 +1,41 @@
+@use '@/shared/styles/abstracts/abstracts' as *;
+
+.number-input {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+
+  &__field {
+    background: transparent;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font: var(--font-gilroy-medium-14);
+    color: var(--neutral-80);
+    line-height: 1;
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+  }
+
+  &__button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    flex: 1 1 0;
+  }
+
+  &__button-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    width: 14px;
+    height: 14px;
+  }
+}

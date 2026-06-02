@@ -1,0 +1,63 @@
+// States in new subclasses must be declared with these mixins
+// in the following order:
+
+// @include toggle-focus-element-box
+// @include toggle-checked-element-box
+// @include toggle-invalid-element-box
+// @include toggle-invalid-focus-element-box
+// @include toggle-disabled-element-box
+//
+// @include toggle-checked-element-icon
+// @include toggle-invalid-element-icon
+// @include toggle-disabled-element-icon
+
+// BOX
+@mixin toggle-focus-element-box {
+  .toggle__input:not(:disabled):focus-visible + .toggle__box {
+    @content;
+  }
+}
+
+@mixin toggle-checked-element-box {
+  .toggle__input:checked:not(:disabled) + .toggle__box {
+    @content;
+  }
+}
+
+@mixin toggle-invalid-element-box {
+  &.toggle_invalid .toggle__input:not(:disabled) + .toggle__box {
+    @content;
+  }
+}
+
+@mixin toggle-invalid-focus-element-box {
+  &.toggle_invalid .toggle__input:not(:disabled):focus-visible + .toggle__box {
+    @content;
+  }
+}
+
+@mixin toggle-disabled-element-box {
+  .toggle__input:disabled + .toggle__box {
+    @content;
+  }
+}
+
+// ICON
+
+@mixin toggle-checked-element-icon {
+  .toggle__input:checked:not(:disabled) + .toggle__box .toggle__icon {
+    @content;
+  }
+}
+
+@mixin toggle-invalid-element-icon {
+  &.toggle_invalid .toggle__input:not(:disabled) + .toggle__box .toggle__icon {
+    @content;
+  }
+}
+
+@mixin toggle-disabled-element-icon {
+  .toggle__input:disabled + .toggle__box .toggle__icon {
+    @content;
+  }
+}

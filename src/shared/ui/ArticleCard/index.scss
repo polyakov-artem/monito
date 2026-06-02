@@ -1,0 +1,55 @@
+@use '@/shared/styles/abstracts/abstracts' as *;
+
+.article-card {
+  padding: 8px;
+
+  &__image-wrap {
+    aspect-ratio: 364/240;
+    margin-bottom: 8px;
+  }
+
+  &__image {
+    @include cover-object;
+  }
+
+  &__content {
+    padding: 8px;
+  }
+
+  &__text-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+    list-style: none;
+    margin: 0 0 10px;
+  }
+
+  &__tag {
+    flex: none;
+    background-color: var(--blue-sea);
+    color: white;
+    padding: 2px 10px;
+    border-radius: 999px;
+    font: var(--font-gilroy-bold-10);
+  }
+
+  &__title {
+    font: var(--font-gilroy-bold-16);
+    color: var(--neutral-100);
+    margin: 0 0 6px;
+  }
+
+  &__description {
+    font: var(--font-gilroy-regular-14);
+    color: var(--neutral-80);
+    margin: 0;
+  }
+}

@@ -1,0 +1,103 @@
+// Colors
+:root {
+  --dark-blue: #003459;
+  --dark-blue-40: #0078cd;
+  --dark-blue-60: #00528c;
+  --dark-blue-80: #002a48;
+
+  --mon-yellow: #f7dba7;
+  --mon-yellow-40: #fceed5;
+  --mon-yellow-60: #f1d092;
+  --mon-yellow-80: #eec77e;
+
+  --pink-red: #ff564f;
+  --green-light: #34c759;
+  --orange-shine: #ff912c;
+  --blue-sea: #00a7e7;
+  --neutral-100: #00171f;
+  --neutral-80: #242b33;
+  --neutral-60: #667479;
+  --neutral-40: #99a2a5;
+  --neutral-20: #ccd1d2;
+  --neutral-10: #ebeeef;
+  --neutral-00: #fdfdfd;
+}
+
+// Fonts
+:root {
+  --ff-gilroy: 'Gilroy', sans-serif;
+
+  --font-gilroy-bold-46: 700 46px/60px var(--ff-gilroy);
+  --font-gilroy-semibold-46: 600 46px/60px var(--ff-gilroy);
+  --font-gilroy-medium-46: 500 46px/60px var(--ff-gilroy);
+  --font-gilroy-regular-46: 400 46px/60px var(--ff-gilroy);
+
+  --font-gilroy-bold-42: 700 42px/50px var(--ff-gilroy);
+  --font-gilroy-semibold-42: 600 42px/50px var(--ff-gilroy);
+  --font-gilroy-medium-42: 500 42px/50px var(--ff-gilroy);
+  --font-gilroy-regular-42: 400 42px/50px var(--ff-gilroy);
+
+  --font-gilroy-bold-36: 700 36px/54px var(--ff-gilroy);
+  --font-gilroy-semibold-36: 600 36px/54px var(--ff-gilroy);
+  --font-gilroy-medium-36: 500 36px/54px var(--ff-gilroy);
+  --font-gilroy-regular-36: 400 36px/54px var(--ff-gilroy);
+
+  --font-gilroy-bold-28: 700 28px/38px var(--ff-gilroy);
+  --font-gilroy-semibold-28: 600 28px/38px var(--ff-gilroy);
+  --font-gilroy-medium-28: 500 28px/38px var(--ff-gilroy);
+  --font-gilroy-regular-28: 400 28px/38px var(--ff-gilroy);
+
+  --font-gilroy-bold-26: 700 26px/36px var(--ff-gilroy);
+  --font-gilroy-semibold-26: 600 26px/36px var(--ff-gilroy);
+  --font-gilroy-medium-26: 500 26px/36px var(--ff-gilroy);
+  --font-gilroy-regular-26: 400 26px/36px var(--ff-gilroy);
+
+  --font-gilroy-bold-24: 700 24px/36px var(--ff-gilroy);
+  --font-gilroy-semibold-24: 600 24px/36px var(--ff-gilroy);
+  --font-gilroy-medium-24: 500 24px/36px var(--ff-gilroy);
+  --font-gilroy-regular-24: 400 24px/36px var(--ff-gilroy);
+
+  --font-gilroy-bold-20: 700 20px/32px var(--ff-gilroy);
+  --font-gilroy-semibold-20: 600 20px/28px var(--ff-gilroy);
+  --font-gilroy-medium-20: 500 20px/28px var(--ff-gilroy);
+  --font-gilroy-regular-20: 400 20px/28px var(--ff-gilroy);
+
+  --font-gilroy-bold-16: 700 16px/24px var(--ff-gilroy);
+  --font-gilroy-semibold-16: 600 16px/24px var(--ff-gilroy);
+  --font-gilroy-medium-16: 500 16px/24px var(--ff-gilroy);
+  --font-gilroy-regular-16: 400 16px/24px var(--ff-gilroy);
+
+  --font-gilroy-bold-18: 700 18px/24px var(--ff-gilroy);
+  --font-gilroy-semibold-18: 600 18px/24px var(--ff-gilroy);
+  --font-gilroy-medium-18: 500 18px/24px var(--ff-gilroy);
+  --font-gilroy-regular-18: 400 18px/24px var(--ff-gilroy);
+
+  --font-gilroy-bold-14: 700 14px/20px var(--ff-gilroy);
+  --font-gilroy-semibold-14: 600 14px/20px var(--ff-gilroy);
+  --font-gilroy-medium-14: 500 14px/20px var(--ff-gilroy);
+  --font-gilroy-regular-14: 400 14px/20px var(--ff-gilroy);
+
+  --font-gilroy-bold-12: 700 12px/18px var(--ff-gilroy);
+  --font-gilroy-semibold-12: 600 12px/18px var(--ff-gilroy);
+  --font-gilroy-medium-12: 500 12px/18px var(--ff-gilroy);
+  --font-gilroy-regular-12: 400 12px/18px var(--ff-gilroy);
+
+  --font-gilroy-bold-10: 700 10px/16px var(--ff-gilroy);
+  --font-gilroy-semibold-10: 600 10px/16px var(--ff-gilroy);
+  --font-gilroy-medium-10: 500 10px/16px var(--ff-gilroy);
+  --font-gilroy-regular-10: 400 10px/16px var(--ff-gilroy);
+
+  --font-gilroy-bold-8: 700 8px/12px var(--ff-gilroy);
+  --font-gilroy-semibold-8: 600 8px/12px var(--ff-gilroy);
+  --font-gilroy-medium-8: 500 8px/12px var(--ff-gilroy);
+  --font-gilroy-regular-8: 400 8px/12px var(--ff-gilroy);
+}
+
+// Spacing
+
+:root {
+  --page-max-width: 1440px;
+  --page-min-width: 415px;
+  --container-py: 16px;
+  --container-max-width: 1212px;
+}

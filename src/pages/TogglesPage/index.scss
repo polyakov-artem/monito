@@ -1,0 +1,25 @@
+.toggles-page {
+  &__container {
+    margin: 258px auto;
+    max-width: 552px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  &__column {
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    padding: 20px;
+  }
+
+  &__column-row {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 25px;
+    align-items: start;
+  }
+}

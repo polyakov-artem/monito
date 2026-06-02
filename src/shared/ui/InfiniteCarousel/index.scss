@@ -1,0 +1,59 @@
+@use '@/shared/styles/abstracts/abstracts' as *;
+
+.infinite-carousel {
+  overflow: hidden;
+  position: relative;
+
+  &__track {
+    display: flex;
+    width: max-content;
+    animation: scroll linear infinite;
+    animation-duration: var(--inf-carousel-duration);
+  }
+
+  &__item {
+    flex: none;
+    padding: 0 var(--inf-carousel-padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > img {
+      width: var(--inf-carousel-item-width);
+      height: var(--inf-carousel-item-height);
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  &::before {
+    left: 0;
+    background: linear-gradient(to right, white, transparent);
+  }
+
+  &::after {
+    right: 0;
+    background: linear-gradient(to left, white, transparent);
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

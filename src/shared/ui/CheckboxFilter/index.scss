@@ -1,0 +1,40 @@
+@use '@/shared/styles/abstracts/abstracts' as *;
+
+.checkbox-filter {
+  &__title {
+    font: var(--font-gilroy-bold-16);
+    color: var(--neutral-100);
+    margin: 0 0 10px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font: var(--font-gilroy-medium-14);
+    color: var(--neutral-100);
+  }
+
+  &__sample {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--sample-color, linear-gradient(to right, var(--sample-gradient)));
+  }
+}

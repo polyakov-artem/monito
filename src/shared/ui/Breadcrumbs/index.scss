@@ -1,0 +1,38 @@
+.breadcrumbs {
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--neutral-60);
+    font: var(--font-gilroy-medium-14);
+  }
+
+  &__item-link {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.2s;
+
+    &:hover {
+      color: var(--neutral-100);
+    }
+  }
+
+  &__item-separator {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__item_current {
+    color: var(--neutral-100);
+  }
+}

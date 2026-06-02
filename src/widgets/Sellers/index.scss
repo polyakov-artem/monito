@@ -1,0 +1,10 @@
+@use '@/shared/styles/abstracts/abstracts' as *;
+
+.sellers {
+  padding: 40px 0;
+
+  &__carousel {
+    flex: none;
+    padding-top: 15px;
+  }
+}

@@ -1,0 +1,38 @@
+// States in new subclasses must be declared with these mixins
+// in the following order:
+//
+// @include input-focus
+// @include input-invalid
+// @include input-invalid-focus
+// @include input-disabled
+// @include input-loading
+
+@mixin input-focus {
+  &:not(.input_invalid):not(.input_disabled):not(.input_loading):focus-within {
+    @content;
+  }
+}
+
+@mixin input-invalid {
+  &.input_invalid:not(.input_disabled):not(.input_loading) {
+    @content;
+  }
+}
+
+@mixin input-invalid-focus {
+  &.input_invalid:not(.input_disabled):not(.input_loading):focus-within {
+    @content;
+  }
+}
+
+@mixin input-disabled {
+  &.input_disabled {
+    @content;
+  }
+}
+
+@mixin input-loading {
+  &.input_loading {
+    @content;
+  }
+}

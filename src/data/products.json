@@ -1,0 +1,121 @@
+[
+  {
+    "id": "1",
+    "title": "Reflex Plus Adult Cat Food Salmon",
+    "specs": {
+      "Product": "Dog Food",
+      "Size": "385gm"
+    },
+    "price": "140.000 VND",
+    "badge": {
+      "text": "Free Toy & Free Shaker",
+      "icon": "gift"
+    },
+    "image": "/products/1.png"
+  },
+
+  {
+    "id": "2",
+    "title": "Reflex Plus Adult Cat Food Salmon",
+    "specs": {
+      "Product": "Cat Food",
+      "Size": "1.5kg"
+    },
+
+    "price": "165.000 VND",
+    "badge": {
+      "text": "Free Toy & Free Shaker",
+      "icon": "gift"
+    },
+    "image": "/products/2.png"
+  },
+
+  {
+    "id": "3",
+    "title": "Cat scratching ball toy kitten sisal rope ball",
+    "specs": {
+      "Product": "Toy",
+      "Size": "1.100.000 VND"
+    },
+    "price": "1.100.000 VND",
+    "badge": {
+      "text": "Free Cat Food",
+      "icon": "gift"
+    },
+    "image": "/products/3.png"
+  },
+
+  {
+    "id": "4",
+    "title": "Cute Pet Cat Warm Nest",
+    "specs": {
+      "Product": "Toy"
+    },
+    "price": "410.000 VND",
+    "badge": {
+      "text": "Free Cat Food",
+      "icon": "gift"
+    },
+    "image": "/products/4.png"
+  },
+
+  {
+    "id": "5",
+    "title": "NaturVet Dogs - Omega-Gold Plus Salmon Oil",
+    "specs": {
+      "Product": "Dog Food",
+      "Size": "385gm"
+    },
+    "price": "350.000 VND",
+    "badge": {
+      "text": "Free Toy & Free Shaker",
+      "icon": "gift"
+    },
+    "image": "/products/5.png"
+  },
+
+  {
+    "id": "6",
+    "title": "Costumes Fashion Pet Clother Cowboy Rider",
+    "specs": {
+      "Product": "Costume",
+      "Size": "1.5kg"
+    },
+    "price": "500.000 VND",
+    "badge": {
+      "text": "Free Toy & Free Shaker",
+      "icon": "gift"
+    },
+    "image": "/products/6.png"
+  },
+
+  {
+    "id": "7",
+    "title": "Costumes Chicken Drumsti ck Headband",
+    "specs": {
+      "Product": "Costume",
+      "Size": "400.000 VND"
+    },
+    "price": "400.000 VND",
+    "badge": {
+      "text": "Free Cat Food",
+      "icon": "gift"
+    },
+    "image": "/products/7.png"
+  },
+
+  {
+    "id": "8",
+    "title": "Plush Pet Toy",
+    "specs": {
+      "Product": "Toy",
+      "Size": "250.000 VND"
+    },
+    "price": "250.000 VND",
+    "image": "/products/8.png",
+    "badge": {
+      "text": "Free Toy & Free Shaker",
+      "icon": "gift"
+    }
+  }
+]

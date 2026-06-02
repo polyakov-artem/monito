@@ -1,0 +1,28 @@
+.modal {
+  --modal-transition-duration: 300ms;
+  --modal-window-margin: 60px;
+
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--modal-window-margin);
+
+  &__backdrop {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity var(--modal-transition-duration) ease;
+  }
+
+  &_open {
+    pointer-events: auto;
+
+    .modal__backdrop {
+      opacity: 1;
+    }
+  }
+}

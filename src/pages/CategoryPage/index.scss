@@ -1,0 +1,24 @@
+@use '@/shared/styles/abstracts/abstracts' as *;
+
+.category-page {
+  &__breadcrumbs {
+    margin-bottom: 12px;
+  }
+
+  &__product-search {
+    padding: 32px 0 60px;
+  }
+
+  &__container {
+    padding-top: 35px;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 20px;
+  }
+
+  @media (max-width: $point-md) {
+    &__product-search {
+      padding: 20px 0 60px;
+    }
+  }
+}

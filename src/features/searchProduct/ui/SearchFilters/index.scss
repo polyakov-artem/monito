@@ -1,0 +1,18 @@
+@use '@/shared/styles/abstracts/abstracts' as *;
+
+.search-filters {
+  &__title {
+    color: var(--dark-blue);
+    font: var(--font-gilroy-bold-24);
+    margin: 0 0 14px;
+  }
+
+  &__filter {
+    padding-bottom: 16px;
+
+    &:not(:first-child) {
+      padding-top: 16px;
+      border-bottom: 1px solid var(--neutral-10);
+    }
+  }
+}

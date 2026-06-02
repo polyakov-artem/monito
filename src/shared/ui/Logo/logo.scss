@@ -1,0 +1,13 @@
+@use '@/shared/styles/abstracts/abstracts' as *;
+
+.logo {
+  text-decoration: none;
+  color: var(--dark-blue);
+  display: inline-flex;
+  width: 115px;
+  height: 40px;
+
+  &__img {
+    @include contain-object;
+  }
+}

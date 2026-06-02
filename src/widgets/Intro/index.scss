@@ -1,0 +1,66 @@
+@use '@/shared/styles/abstracts/abstracts' as *;
+
+.intro {
+  background:
+    url(img/woman.png) no-repeat 100% bottom/58%,
+    url(img/bg.png) no-repeat center/cover;
+
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+
+  &__main {
+    padding: 180px 0 205px;
+    max-width: 480px;
+  }
+
+  &__title {
+    margin: 0;
+    font: 700 60px/65px var(--ff-gilroy);
+    margin-bottom: 24px;
+    color: var(--dark-blue-80);
+    text-transform: capitalize;
+
+    > span {
+      font: 700 46px/60px var(--ff-gilroy);
+    }
+  }
+
+  &__text {
+    font: var(--font-gilroy-medium-16);
+    margin-bottom: 34px;
+    color: var(--neutral-80);
+  }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: max-content minmax(max-content, 163px);
+    gap: 21px;
+  }
+
+  @media (max-width: $point-md) {
+    background:
+      url(img/woman.png) no-repeat center bottom/500px,
+      url(img/bg.png) no-repeat center/cover;
+
+    &__main {
+      padding-top: 140px;
+      padding-bottom: 410px;
+    }
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    &__title {
+      font: var(--font-gilroy-bold-46);
+      line-height: 1;
+      margin-bottom: 14px;
+
+      > span {
+        font: var(--font-gilroy-bold-28);
+      }
+    }
+
+    &__text {
+      font: var(--font-gilroy-medium-12);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "1",
+  "title": "Shiba Inu Sepia",
+  "price": "34.000.000 VND",
+  "sku": "#1000078",
+  "specs": {
+    "SKU": "#1000078",
+    "Gender": "Female",
+    "Age": "2 Months",
+    "Size": "Small",
+    "Color": "Appricot & Tan",
+    "Vaccinated": "Yes",
+    "Dewormed": "Yes",
+    "Cert": "Yes (MKA)",
+    "Microchip": "Yes",
+    "Location": "Vietnam",
+    "Published Date": "12-Oct-2022",
+    "Additional Information": "Pure breed Shih Tzu. Good body structure. With MKA cert and Microchip. Father from champion lineage."
+  },
+
+  "images": [
+    "/product/1.jpg",
+    "/product/2.jpg",
+    "/product/3.jpg",
+    "/product/4.jpg",
+    "/product/5.jpg",
+    "/product/6.jpg",
+    "/product/7.jpg",
+    "/product/8.jpg"
+  ]
+}

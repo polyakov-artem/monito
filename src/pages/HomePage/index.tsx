@@ -4,11 +4,12 @@ import {
   PrimaryBanner,
   Sellers,
   SecondaryBanner,
-  PetsShowcase,
-  ProductsShowcase,
   ArticlesShowcase,
   Footer,
+  ProductShowcase,
 } from '@/widgets';
+import products from '@/data/products.json';
+import pets from '@/data/pets.json';
 import './index.scss';
 
 export const HomePage = () => {
@@ -17,9 +18,21 @@ export const HomePage = () => {
       <Header className="home-page__header" />
       <main className="page-main">
         <Intro />
-        <PetsShowcase />
+        <ProductShowcase
+          type="pet"
+          subtitle="What's new"
+          title="Take a look at some of our pets"
+          linkText="View more"
+          products={pets}
+        />
         <PrimaryBanner />
-        <ProductsShowcase />
+        <ProductShowcase
+          type="product"
+          subtitle="Hard to choose right products for your pets?"
+          title="Our Products"
+          linkText="View more"
+          products={products}
+        />
         <Sellers />
         <SecondaryBanner />
         <ArticlesShowcase />

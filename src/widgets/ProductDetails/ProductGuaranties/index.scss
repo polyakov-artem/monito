@@ -1,0 +1,31 @@
+@use '@/shared/styles/abstracts/abstracts' as *;
+
+.product-guaranties {
+  display: flex;
+  align-items: center;
+  gap: 8px 17px;
+  padding: 9px 12px;
+  margin: 0;
+  list-style: none;
+  color: var(--dark-blue-80);
+  font: var(--font-gilroy-bold-14);
+  flex-wrap: wrap;
+  border-radius: 10px;
+  background-color: var(--mon-yellow-40);
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+    flex: none;
+  }
+
+  @media (max-width: $point-md) {
+    padding: 14px 12px;
+  }
+}

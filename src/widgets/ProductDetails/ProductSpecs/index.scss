@@ -1,0 +1,26 @@
+.product-specs {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: var(--neutral-60);
+  font: var(--font-gilroy-medium-14);
+
+  &__item {
+    display: grid;
+    grid-template-columns: 195px 1fr;
+    align-items: start;
+    border-bottom: 1px solid var(--neutral-10);
+    padding: 9px 0 12px;
+  }
+
+  &__label,
+  &__value {
+    padding: 0 11px;
+  }
+
+  &__value {
+    &::before {
+      content: ':';
+    }
+  }
+}

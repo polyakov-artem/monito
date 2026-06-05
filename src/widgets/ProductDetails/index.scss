@@ -1,0 +1,143 @@
+@use '@/shared/styles/abstracts/abstracts' as *;
+
+.product-details {
+  padding: 22px 49px 22px 20px;
+  border-radius: 20px;
+  border: 1px solid var(--neutral-10);
+  display: grid;
+  grid-template-columns: 50.5% 1fr;
+  gap: 34px;
+  align-items: start;
+
+  &__gallery {
+    margin-bottom: 25px;
+  }
+
+  &__guaranties-desktop {
+    margin-bottom: 17px;
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 18px;
+  }
+
+  &__sku {
+    margin-bottom: 2px;
+    color: var(--neutral-40);
+    font: var(--font-gilroy-medium-14);
+  }
+
+  &__title {
+    margin: 0 0 6px;
+    color: var(--neutral-100);
+    font: var(--font-gilroy-bold-24);
+  }
+
+  &__price {
+    margin: 0 0 16px;
+    color: var(--neutral-80);
+    font: var(--font-gilroy-bold-20);
+  }
+
+  &__actions {
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+
+    > *:nth-child(1) {
+      flex: none;
+    }
+
+    > *:nth-child(2) {
+      flex: 0 0 218px;
+    }
+  }
+
+  &__guaranties-mobile {
+    display: none;
+  }
+
+  &__share-mobile {
+    display: none;
+  }
+
+  &__specs-header {
+    display: none;
+  }
+
+  @media (max-width: $point-md) {
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    display: block;
+
+    &__content-wrap {
+      padding: 32px 16px 20px 16px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      box-shadow: 0 -6px 6px 0 rgba(0, 0, 0, 0.06);
+    }
+
+    &__gallery {
+      margin-bottom: 25px;
+    }
+
+    &__guaranties-desktop {
+      display: none;
+    }
+
+    &__breadcrumbs {
+      margin-bottom: 8px;
+    }
+
+    &__sku {
+      display: none;
+    }
+
+    &__title {
+      margin: 0 0 2px;
+      font: var(--font-gilroy-bold-24);
+    }
+
+    &__actions {
+      gap: 11px;
+
+      > *:nth-child(2) {
+        flex: 1 1 auto;
+        max-width: 235px;
+      }
+    }
+
+    &__guaranties-mobile {
+      display: flex;
+    }
+
+    &__share-mobile {
+      display: block;
+    }
+
+    &__share-desktop {
+      display: none;
+    }
+
+    &__specs-header {
+      display: block;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__specs-title {
+      margin: 0;
+      color: var(--neutral-100);
+      font: var(--font-gilroy-bold-18);
+    }
+
+    &__specs {
+      margin-bottom: 26px;
+    }
+  }
+}

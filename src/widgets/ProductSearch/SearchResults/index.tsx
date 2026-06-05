@@ -1,7 +1,7 @@
 import { type FC } from 'react';
 import clsx from 'clsx';
 import './index.scss';
-import { ProductCard } from '@/shared/ui/ProductCard';
+import { ProductCard } from '@/entities/product';
 import { Link } from 'react-router-dom';
 import { routerPaths } from '@/shared/config/routes';
 import type { Pet } from '../types';

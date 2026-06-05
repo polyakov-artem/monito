@@ -5,6 +5,7 @@ import { TogglesPage } from '@/pages/TogglesPage';
 import { HomePage } from '@/pages/HomePage';
 import { CategoryPage } from '@/pages/CategoryPage';
 import { RootLayout } from '@/widgets/RootLayout/RootLayout';
+import { DetailsPage } from '@/pages/DetailsPage';
 const basename = import.meta.env.VITE_PUBLIC_PATH.replace(/\/$/, '');
 
 const router = createBrowserRouter(
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
         { path: routerPaths.toggles, Component: TogglesPage },
         { index: true, Component: HomePage },
         { path: routerPaths.category, Component: CategoryPage },
+        { path: routerPaths.details, Component: DetailsPage },
       ],
     },
   ],

@@ -1,0 +1,26 @@
+@use '@/shared/styles/abstracts/abstracts' as *;
+
+.customers {
+  max-width: var(--content-max-width);
+
+  &__title {
+    font: var(--font-gilroy-bold-24);
+    color: var(--neutral-100);
+    margin: 0 0 12px;
+    padding: 0 32px;
+  }
+
+  &__slider {
+    --slide-edge-offset: 32px;
+  }
+
+  @media (max-width: $point-md) {
+    &__title {
+      padding: 0 16px;
+    }
+
+    &__slider {
+      --slide-edge-offset: 16px;
+    }
+  }
+}

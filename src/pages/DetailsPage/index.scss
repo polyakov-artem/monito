@@ -1,0 +1,38 @@
+@use '@/shared/styles/abstracts/abstracts' as *;
+
+.details-page {
+  &__header {
+    margin-bottom: 16px;
+  }
+
+  &__product-details {
+    margin: 0 auto 60px;
+    max-width: 1180px;
+  }
+
+  &__customers {
+    margin: 0 auto 44px;
+  }
+
+  &__product-showcase {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $point-md) {
+    &__header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+    }
+
+    &__product-details {
+      margin: 0 auto 22px;
+    }
+
+    &__customers {
+      margin: 0 auto;
+    }
+  }
+}

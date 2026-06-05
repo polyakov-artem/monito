@@ -4,7 +4,7 @@ import { routerPaths } from '@/shared/config/routes';
 import { ShowcaseLayout } from '../../shared/ui/ShowcaseLayout';
 import products from '@/data/products.json';
 import { Link } from 'react-router-dom';
-import { ProductCard } from '@/shared/ui/ProductCard';
+import { ProductCard } from '@/entities/product';
 import { CardBadge } from '@/shared/ui/CardBadge';
 import './index.scss';
 
@@ -27,7 +27,7 @@ export const ProductsShowcase: FC<ProductsShowcaseProps> = ({ className }) => {
         {products.map((product, index) => (
           <Link to={routerPaths.details} key={index} className="products-showcase__card">
             <ProductCard
-              view="product"
+              withPriceSpacing
               {...product}
               badge={product.badge ? <CardBadge {...product.badge} /> : undefined}
             />

@@ -235,26 +235,46 @@
     }
   }
 
-  &_view_filter {
-    &.btn_theme_primary {
-      color: var(--dark-blue);
+  &_view_glass {
+    --btn-color: var(--neutral-00);
+    --btn-background: rgba(255, 255, 255, 0.4);
 
-      &.btn_selected {
-        background-color: var(--dark-blue);
-        color: var(--neutral-00);
-      }
+    color: var(--btn-color);
+    background-color: var(--btn-background);
+
+    @include btn-hover {
+      --btn-background: rgba(255, 255, 255, 0.6);
     }
 
-    &.btn_scale_m {
-      padding: 7px 10px;
-      border-radius: 8px;
-      font: var(--font-gilroy-bold-16);
-      gap: 8px;
+    @include btn-disabled {
+      opacity: 0.5;
+    }
 
-      .btn__icon {
-        width: 24px;
-        height: 24px;
-      }
+    .btn__icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    &.btn_icon-only {
+      padding: 9px;
+    }
+  }
+
+  &_view_filter {
+    gap: 8px;
+    padding: 7px 10px;
+    border-radius: 8px;
+    font: var(--font-gilroy-bold-16);
+    color: var(--dark-blue);
+
+    .btn__icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    &.btn_selected {
+      color: var(--neutral-00);
+      background-color: var(--dark-blue);
     }
   }
 }

@@ -4,7 +4,7 @@ import { routerPaths } from '@/shared/config/routes';
 import { ShowcaseLayout } from '../../shared/ui/ShowcaseLayout';
 import articles from '@/data/articles.json';
 import { Link } from 'react-router-dom';
-import { ArticleCard } from '@/shared/ui/ArticleCard';
+import { ArticleCard } from '@/entities/article';
 import './index.scss';
 
 type ArticlesShowcaseProps = {

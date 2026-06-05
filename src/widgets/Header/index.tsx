@@ -40,6 +40,14 @@ export const Header: FC<PropsWithClassName> = ({ className }) => {
   };
 
   useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [isMenuOpen]);
+
+  useEffect(() => {
     const handleWindowResize = () => {
       setIsMenuOpen(false);
     };

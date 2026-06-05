@@ -26,9 +26,8 @@ export const SearchPanel: FC<SearchPanelProps> = ({ className }) => {
       <Button
         className="search-panel__filter-btn"
         as="button"
-        theme="primary"
-        scale="m"
         view="filter"
+        selected={isFilterOpen}
         iconBefore={<SvgIcon iconId="filter" />}
         onClick={() => setIsFilterOpen(!isFilterOpen)}
       >

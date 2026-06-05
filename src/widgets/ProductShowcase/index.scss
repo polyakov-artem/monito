@@ -1,0 +1,31 @@
+@use '@/shared/styles/abstracts/abstracts' as *;
+
+.product-showcase {
+  padding: 60px 0;
+
+  &__grid {
+    padding-top: 28px;
+    flex: none;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 280px);
+    gap: 20px;
+  }
+
+  &__card {
+    text-decoration: none;
+    box-shadow: 0 4px 28px 0 rgba(0, 0, 0, 0.08);
+    display: flex;
+  }
+
+  @media (max-width: $point-md) {
+    padding: 40px 0;
+
+    &__grid {
+      gap: 12px;
+      padding: 20px 0 60px;
+      grid-template-columns: repeat(auto-fill, 185px);
+    }
+  }
+}

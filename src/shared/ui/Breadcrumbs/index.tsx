@@ -14,7 +14,11 @@ export const Breadcrumbs: FC<TBreadcrumbsProps> = ({ crumbs, className }) => {
 
   const items = useMemo(() => {
     const hasFewCrumbs = crumbs.length > 1;
-    const separator = <SvgIcon className="breadcrumbs__item-separator" iconId="caret-right" />;
+    const separator = (
+      <span className="breadcrumbs__item-separator">
+        <SvgIcon iconId="caret-right" />
+      </span>
+    );
 
     return crumbs.map((crumb, index) => {
       const isCurrent = index === crumbs.length - 1;

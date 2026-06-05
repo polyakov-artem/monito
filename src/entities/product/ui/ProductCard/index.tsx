@@ -9,13 +9,17 @@ export type ProductCardProps = {
   title: string;
   specs: Record<string, string | undefined>;
   badge?: ReactNode;
-  view?: string;
+  withPriceSpacing?: boolean;
 } & ComponentProps<'article'>;
 
 export const ProductCard: FC<ProductCardProps> = props => {
-  const { className, image, price, specs, title, badge, view } = props;
+  const { className, image, price, specs, title, badge, withPriceSpacing } = props;
 
-  const classes = clsx('product-card', view && `product-card_view_${view}`, className);
+  const classes = clsx(
+    'product-card',
+    withPriceSpacing && 'product-card_with-price-spacing',
+    className
+  );
 
   return (
     <article className={classes}>

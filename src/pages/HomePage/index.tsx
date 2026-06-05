@@ -8,8 +8,7 @@ import {
   Footer,
   ProductShowcase,
 } from '@/widgets';
-import products from '@/data/products.json';
-import pets from '@/data/pets.json';
+import { productsData, petsData } from '@/entities/product';
 import './index.scss';
 
 export const HomePage = () => {
@@ -23,7 +22,7 @@ export const HomePage = () => {
           subtitle="What's new"
           title="Take a look at some of our pets"
           linkText="View more"
-          products={pets}
+          products={petsData}
         />
         <PrimaryBanner />
         <ProductShowcase
@@ -31,7 +30,7 @@ export const HomePage = () => {
           subtitle="Hard to choose right products for your pets?"
           title="Our Products"
           linkText="View more"
-          products={products}
+          products={productsData}
         />
         <Sellers />
         <SecondaryBanner />

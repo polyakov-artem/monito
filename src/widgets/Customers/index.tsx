@@ -4,12 +4,13 @@ import type { FC } from 'react';
 import type { PropsWithClassName } from '@/shared/types/types';
 import './index.scss';
 
+const publicUrl = import.meta.env.VITE_PUBLIC_PATH;
 const images = [
-  '/customers/1.png',
-  '/customers/2.png',
-  '/customers/3.png',
-  '/customers/4.png',
-  '/customers/5.png',
+  `${publicUrl}customers/1.png`,
+  `${publicUrl}customers/2.png`,
+  `${publicUrl}customers/3.png`,
+  `${publicUrl}customers/4.png`,
+  `${publicUrl}customers/5.png`,
 ];
 
 const items = Array.from({ length: 5 }).fill(images).flat() as string[];

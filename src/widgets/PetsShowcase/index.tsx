@@ -2,7 +2,7 @@ import type { FC } from 'react';
 import clsx from 'clsx';
 import { routerPaths } from '@/shared/config/routes';
 import { ShowcaseLayout } from '../../shared/ui/ShowcaseLayout';
-import pets from '@/data/pets.json';
+import { petsData } from '@/entities/product';
 import { Link } from 'react-router-dom';
 import { ProductCard } from '@/entities/product';
 import './index.scss';
@@ -23,7 +23,7 @@ export const PetsShowcase: FC<PetsShowcaseProps> = ({ className }) => {
       linkText="View more"
     >
       <div className="pets-showcase__grid">
-        {pets.map((pet, index) => (
+        {petsData.map((pet, index) => (
           <Link to={routerPaths.details} key={index} className="pets-showcase__card">
             <ProductCard {...pet} />
           </Link>

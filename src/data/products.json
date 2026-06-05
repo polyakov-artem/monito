@@ -11,7 +11,7 @@
       "text": "Free Toy & Free Shaker",
       "icon": "gift"
     },
-    "image": "/products/1.png"
+    "image": "products/1.png"
   },
 
   {
@@ -27,7 +27,7 @@
       "text": "Free Toy & Free Shaker",
       "icon": "gift"
     },
-    "image": "/products/2.png"
+    "image": "products/2.png"
   },
 
   {
@@ -42,7 +42,7 @@
       "text": "Free Cat Food",
       "icon": "gift"
     },
-    "image": "/products/3.png"
+    "image": "products/3.png"
   },
 
   {
@@ -56,7 +56,7 @@
       "text": "Free Cat Food",
       "icon": "gift"
     },
-    "image": "/products/4.png"
+    "image": "products/4.png"
   },
 
   {
@@ -71,7 +71,7 @@
       "text": "Free Toy & Free Shaker",
       "icon": "gift"
     },
-    "image": "/products/5.png"
+    "image": "products/5.png"
   },
 
   {
@@ -86,7 +86,7 @@
       "text": "Free Toy & Free Shaker",
       "icon": "gift"
     },
-    "image": "/products/6.png"
+    "image": "products/6.png"
   },
 
   {
@@ -101,7 +101,7 @@
       "text": "Free Cat Food",
       "icon": "gift"
     },
-    "image": "/products/7.png"
+    "image": "products/7.png"
   },
 
   {
@@ -112,7 +112,7 @@
       "Size": "250.000 VND"
     },
     "price": "250.000 VND",
-    "image": "/products/8.png",
+    "image": "products/8.png",
     "badge": {
       "text": "Free Toy & Free Shaker",
       "icon": "gift"

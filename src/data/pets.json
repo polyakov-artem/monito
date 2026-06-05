@@ -7,7 +7,7 @@
       "Age": "02 months"
     },
     "price": "3.900.000 VND",
-    "image": "/pets/1.png"
+    "image": "pets/1.png"
   },
   {
     "id": "11",
@@ -17,7 +17,7 @@
       "Age": "02 months"
     },
     "price": "4.000.000 VND",
-    "image": "/pets/2.png"
+    "image": "pets/2.png"
   },
   {
     "id": "12",
@@ -27,7 +27,7 @@
       "Age": "02 months"
     },
     "price": "8.900.000 VND",
-    "image": "/pets/3.png"
+    "image": "pets/3.png"
   },
   {
     "id": "13",
@@ -37,7 +37,7 @@
       "Age": "02 months"
     },
     "price": "3.900.000 VND",
-    "image": "/pets/4.png"
+    "image": "pets/4.png"
   },
   {
     "id": "14",
@@ -47,7 +47,7 @@
       "Age": "02 months"
     },
     "price": "4.000.000 VND",
-    "image": "/pets/5.png"
+    "image": "pets/5.png"
   },
   {
     "id": "15",
@@ -57,7 +57,7 @@
       "Age": "02 months"
     },
     "price": "8.900.000 VND",
-    "image": "/pets/6.png"
+    "image": "pets/6.png"
   },
   {
     "id": "16",
@@ -67,7 +67,7 @@
       "Age": "02 months"
     },
     "price": "4.000.000 VND",
-    "image": "/pets/5.png"
+    "image": "pets/5.png"
   },
   {
     "id": "17",
@@ -77,6 +77,6 @@
       "Age": "02 months"
     },
     "price": "8.900.000 VND",
-    "image": "/pets/6.png"
+    "image": "pets/6.png"
   }
 ]

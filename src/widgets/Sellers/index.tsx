@@ -3,8 +3,10 @@ import clsx from 'clsx';
 import type { FC } from 'react';
 import { routerPaths } from '@/shared/config/routes';
 import { InfiniteCarousel } from '@/shared/ui/InfiniteCarousel';
-import './index.scss';
 import { ShowcaseLayout } from '@/shared/ui/ShowcaseLayout';
+import './index.scss';
+
+const publicUrl = import.meta.env.VITE_PUBLIC_PATH;
 
 export const Sellers: FC<PropsWithClassName> = ({ className }) => {
   const classes = clsx('sellers', className);
@@ -21,13 +23,13 @@ export const Sellers: FC<PropsWithClassName> = ({ className }) => {
         className="sellers__carousel"
         speed={60}
         images={[
-          '/sellers/1.png',
-          '/sellers/2.png',
-          '/sellers/3.png',
-          '/sellers/4.png',
-          '/sellers/5.png',
-          '/sellers/6.png',
-          '/sellers/7.png',
+          `${publicUrl}sellers/1.png`,
+          `${publicUrl}sellers/2.png`,
+          `${publicUrl}sellers/3.png`,
+          `${publicUrl}sellers/4.png`,
+          `${publicUrl}sellers/5.png`,
+          `${publicUrl}sellers/6.png`,
+          `${publicUrl}sellers/7.png`,
         ]}
       />
     </ShowcaseLayout>
